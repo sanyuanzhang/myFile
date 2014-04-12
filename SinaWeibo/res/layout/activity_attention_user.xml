@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh_attentionUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView_home"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_fragment_home" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="62dp" >
+
+                <ImageView
+                    android:id="@+id/imageView_attentionUser"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_action_person" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView_attentionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/frameLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/frameLayout1"
+                android:text="screen_name"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_Userlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/frameLayout1"
+                android:layout_alignLeft="@+id/textView_attentionName"
+                android:layout_marginTop="1dp"
+                android:text="中国"
+                android:textColor="#8CB3D3" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frameLayout1"
+                android:layout_below="@+id/imageView_home"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:text="个人简介"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView_friends_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_description"
+                android:layout_below="@+id/textView_description"
+                android:layout_marginTop="10dp"
+                android:text="关注数" />
+
+            <TextView
+                android:id="@+id/textView_online_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_Userlocation"
+                android:layout_alignBottom="@+id/textView_Userlocation"
+                android:layout_toRightOf="@+id/textView_Userlocation"
+                android:layout_marginLeft="15dp"
+                android:text="状态" />
+
+            <TextView
+                android:id="@+id/textView_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="3dp"
+                android:text="TextView" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView_followers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:text="粉丝数" />
+
+    <TextView
+        android:id="@+id/textView_statuses_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_followers_count"
+        android:layout_below="@+id/textView_followers_count"
+        android:layout_marginTop="5dp"
+        android:text="微博数" />
+
+    <TextView
+        android:id="@+id/textView_favourites_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_statuses_count"
+        android:layout_below="@+id/textView_statuses_count"
+        android:layout_marginTop="5dp"
+        android:text="收藏数" />
+
+    <TextView
+        android:id="@+id/textView_follow_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_favourites_count"
+        android:layout_below="@+id/textView_favourites_count"
+        android:layout_marginTop="14dp"
+        android:text="关注我：" />
+
+    <TextView
+        android:id="@+id/textView_verified_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_follow_me"
+        android:layout_below="@+id/textView_follow_me"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:text="认证理由：" />
+
+    <TextView
+        android:id="@+id/textView_created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_verified_reason"
+        android:layout_below="@+id/textView_verified_reason"
+        android:layout_marginTop="10dp"
+        android:text="创建时间：" />
+
+</RelativeLayout>

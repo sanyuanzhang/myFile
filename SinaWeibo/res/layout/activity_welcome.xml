@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FCBEC"
+    android:id="@+id/relativeLayout" >
+    
+	<TextView
+        android:id="@+id/textView_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="wei博江湖"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_appName"
+        android:layout_below="@+id/textView_appName"
+        android:layout_marginLeft="54dp"
+        android:text="version:1.0.1"
+        android:textColor="#ffffff" />
+    
+</RelativeLayout>

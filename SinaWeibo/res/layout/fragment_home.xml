@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView_home"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_fragment_home" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="62dp" >
+
+                <ImageView
+                    android:id="@+id/imageView_user"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_action_person" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/frameLayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/frameLayout1"
+                android:text="screen_name"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/frameLayout1"
+                android:layout_alignLeft="@+id/textView_userName"
+                android:layout_marginTop="1dp"
+                android:text="中国"
+                android:textColor="#8CB3D3" />
+
+            <Button
+                android:id="@+id/button_user"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/imageView_home"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/textView_location"
+                android:padding="2dp"
+                android:text="个人资料"
+                android:textSize="12sp"
+                android:onClick="doClick" />
+
+            <ListView
+                android:id="@+id/listView_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frameLayout1"
+                android:layout_below="@+id/button_user"
+                android:layout_marginTop="25dp" >
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

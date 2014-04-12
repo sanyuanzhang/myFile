@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newer.sina.weibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_weibo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.newer.sina.weibo.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.newer.sina.weibo.LoginActivity" >
+        </activity>
+        <activity android:name="com.newer.sina.weibo.AuthActivity" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.MyAttentionActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.FansActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.CollectionActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.UserInfoActivity"
+            android:theme="@style/Theme.Base.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.ReleaseWeiboActivity"
+            android:theme="@style/Theme.Base.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.CommonListActivity"
+            android:theme="@style/Theme.Base.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.newer.sina.weibo.AttentionUserActivity"
+            android:theme="@style/Theme.Base.AppCompat.Light" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wei博江湖</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">退出</string>
+    <string name="title_section1">我的主页</string>
+    <string name="title_section2">我的微博</string>
+    <string name="title_section3">公共微博</string>
+    <string name="title_section4">关于</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="action_new">添加</string>
+    
+    <string-array name="drawer_list">
+        <item >关于wei博江湖</item>
+        <item >注销</item>
+    </string-array>
+    
+    <string-array name="action_list">
+        <item >注销</item>
+    </string-array>
+    <string name="action_logout">注销</string>
+
+</resources>

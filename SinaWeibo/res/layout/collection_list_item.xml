@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg"
+    android:layout_margin="8dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imageView_collection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_action_person" />
+
+    <TextView
+        android:id="@+id/textView_collection_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_collection"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView_collection"
+        android:text="screen_name"
+        android:textColor="#44A2D9"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView_collection_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_collection_name"
+        android:layout_below="@+id/textView_collection_name"
+        android:layout_marginTop="2dp"
+        android:text="created_time" />
+
+    <TextView
+        android:id="@+id/textView_collection_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView_collection"
+        android:layout_below="@+id/imageView_collection"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:text="text"
+        android:textSize="16sp"
+        android:autoLink="web"/>
+
+    <ImageView
+        android:id="@+id/imageView_collection_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_collection_text"
+        android:layout_below="@+id/textView_collection_text"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_collection" />
+
+    <TextView
+        android:id="@+id/textView_collection_reposts_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView_collection_image"
+        android:layout_below="@+id/imageView_collection_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="转发数"
+        android:textColor="#8CB3D3" />
+
+    <TextView
+        android:id="@+id/textView_collection_comments_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_collection_reposts_count"
+        android:layout_alignBottom="@+id/textView_collection_reposts_count"
+        android:layout_toRightOf="@+id/textView_collection_reposts_count"
+        android:layout_marginLeft="8dp"
+        android:text="评论数"
+        android:textColor="#8CB3D3" />
+
+    <TextView
+        android:id="@+id/textView_collection_attitudes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_collection_comments_count"
+        android:layout_alignBottom="@+id/textView_collection_comments_count"
+        android:layout_toRightOf="@id/textView_collection_comments_count"
+        android:layout_marginLeft="8dp"
+        android:text="表态数"
+        android:textColor="#8CB3D3" />
+
+    <TextView
+        android:id="@+id/textView_collection_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_collection_date"
+        android:layout_below="@+id/textView_collection_date"
+        android:text="来源：" />
+
+</RelativeLayout>

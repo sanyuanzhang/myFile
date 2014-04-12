@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/imageView_attention"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_action_person" />
+
+    <TextView
+        android:id="@+id/textView_attention_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_attention"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imageView_attention"
+        android:text="screen_name"
+        android:textColor="#8CB3D3"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView_attention_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_attention_name"
+        android:layout_below="@+id/textView_attention_name"
+        android:layout_marginTop="2dp"
+        android:text="中国"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_attention_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_attention_location"
+        android:layout_below="@+id/textView_attention_location"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:text="个人简介"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_attention"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_attention_name"
+        android:layout_marginRight="16dp"
+        android:text="取消关注"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_bg"
+            android:descendantFocusability="blocksDescendants" >
+
+            <ImageView
+                android:id="@+id/imageView_common_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_action_person" />
+
+            <TextView
+                android:id="@+id/textView_common_weiboname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView_common_list"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/imageView_common_list"
+                android:text="screen_name"
+                android:textColor="#44A2D9"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView_common_weibodate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_common_weiboname"
+                android:layout_below="@+id/textView_common_weiboname"
+                android:layout_marginTop="2dp"
+                android:text="created_time" />
+
+            <TextView
+                android:id="@+id/textView_common_weibotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView_common_list"
+                android:layout_below="@+id/imageView_common_list"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="web"
+                android:text="text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView_common_weiboimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_common_weibotext"
+                android:layout_below="@+id/textView_common_weibotext"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_collection" />
+
+            <TextView
+                android:id="@+id/textView_comments_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView_common_weiboimage"
+                android:layout_below="@+id/imageView_common_weiboimage"
+                android:layout_marginTop="10dp"
+                android:text="评论数"
+                android:textColor="#8CB3D3" />
+
+            <TextView
+                android:id="@+id/textView_common_weibosource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_common_weibodate"
+                android:layout_below="@+id/textView_common_weibodate"
+                android:text="来源：" />
+
+            <ListView
+                android:id="@+id/listView_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_comments_count"
+                android:layout_below="@+id/textView_comments_count" >
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
